@@ -1,1 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+
+    <title>Гиперссылки и формы</title>
+
+    <style>
+      a {
+        color: rgb(71, 71, 236);
+        text-decoration: none;
+      }
+
+      li {
+        margin-bottom: 20px;
+      }
+    </style>
+</head>
+<body>
+    <main style="padding: 0 600px; margin: 0 auto;">
+      <h2>Гиперссылки:</h2>
+      <ul>
+        <li>
+          <a href="http://kubsu.ru" target="_blank">абсолютная гиперссылка на&nbsp;главную страницу сайта kubsu.ru</a>
+        </li>
+        <li>
+          <a href="https://kubsu.ru" target="_blank">абсолютная на&nbsp;главную сайта kubsu.ru в&nbsp;протоколе https</a>
+        </li>
+        <li>
+          <span style="margin-right: 30px;">Ссылка-изображение</span>
+          <a href="https://avatars.mds.yandex.net/i?id=a53d230a5a59f2f535c195da6dafbd2f_l-5220548-images-thumbs&n=13" target="_blank"><img src="sunset.png" alt="Sunset" width="300px" height="150px"></a>
+        </li>
+        <li>
+          <a href="/internalpage" target="_blank">сокращенная ссылка на&nbsp;внутреннюю страницу</a>
+        </li>
+        <li>
+          <a href="/" target="_blank">сокращенная ссылка на&nbsp;главную страницу</a>
+        </li>
+        <li>
+          <a href="#fragmentpage">ссылка на&nbsp;фрагмент текущей страницы</a>
+        </li>
+        <li>
+          <a href="https://example.com/products?category=electronics&brand=samsung&sort=price" target="_blank">ссылка с&nbsp;тремя параметрами в&nbsp;URL</a>
+        </li>
+        <li>
+          <a href="https://example.com/product?id=12345" target="_blank">ссылка с&nbsp;параметром id&nbsp;в&nbsp;URL</a>
+        </li>
+        <li>
+          <a href="index.html">Относительная ссылка на&nbsp;страницу в&nbsp;текущем каталоге</a>
+        </li>
+        <li>
+          <a href="about/html" target="_blank">Относительная ссылка на&nbsp;страницу в&nbsp;каталоге about</a>
+        </li>
+        <li>
+          <a href="../site.html" target="_blank">Относительная ссылка на&nbsp;страницу в&nbsp;каталоге уровнем выше текущего</a>
+        </li>
+        <li>
+          <a href="../../site.html" target="_blank">Относительная ссылка на&nbsp;страницу в&nbsp;каталоге двумя уровнями выше</a>
+        </li>
+        <li>
+          <a href="https://example.com" target="_blank">Контекстная ссылка в&nbsp;абзаце</a>
+        </li>
+        <li>
+          <a href="https://www.kubsu.ru/ru/education/programs" target="_blank">Ссылка на&nbsp;фрагмент страницы стороннего сайта</a>
+        </li>
+        <li>
+          <map name="circle">
+            <area shape="circle" coords="50,50,50" href="https://pngimg.com/uploads/circle/circle_PNG30.png" alt="Круглая область" target="_blank"/>
+          </map>
+          <img src="circle.png" usemap="#circle" alt="кружок" width="100px" style="margin-right: 20px;">
+          <map name="rect">
+            <area shape="rect" coords="0,0,319,64" href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Rectangle_example.svg/2560px-Rectangle_example.svg.png" alt="Прямоугольная область" target="_blank"/>
+          </map>
+          <img src="rect.png" usemap="#rect" alt="прямоугольник" width="100px">
+        </li>
+        <li>
+          <a href="">Ссылка с пустым href</a>
+        </li>
+        <li>
+          <a>Ссылка без href</a>
+        </li>
+        <li>
+          <a href="https://google.com" rel="nofollow" target="_blank">Ссылка по которой запрещен переход поисковикам</a>
+        </li>
+        <li>
+          <a href="https://google.com" rel="noindex" target="_blank">Запрещенная для индексации поисковиками</a>
+        </li>
+        <li>
+          <ol>
+            <li>
+              <a href="https://example.com/page1" title="Описание ссылки 1" target="_blank">Первая ссылка</a>
+            </li>
+            <li>
+              <a href="https://example.com/page2" title="Описание ссылки 2" target="_blank">Вторая ссылка</a>
+            </li>
+          </ol>
+        </li>
+        <li><a href="ftp://danil:12345@ftp.example.com/path/to/file.txt">Ссылка на файл на сервере FTP с авторизацией</a></li>
+      </ul>
+
+      <h2 id="fragmentpage">Формы:</h2>
+      <form action="https://jsonplaceholder.typicode.com/posts" method="POST" style="display: flex; flex-direction: column">
+        <input type="text" name="ФИО" placeholder="Фамилия, имя и&nbsp;отчество*" required style="margin-bottom: 20px; height: 32px;">
+
+        <input type="tel" name="phone" placeholder="Телефон*" required style="margin-bottom: 20px; height: 32px;">
+
+        <input type="email" name="email" placeholder="Email*" required style="margin-bottom: 20px; height: 32px;">
+
+        <input type="date" name="birthday" placeholder="Дата рождения*" required style="margin-bottom: 20px; height: 32px;">
+
+        <label>Ваш пол:</label>
+        <div style="margin-bottom: 20px;">
+          <label style="display: inline-flex;">
+            <input type="radio" name="gender" value="male">Мужской
+          </label>
+          <label style="display: inline-flex;">
+            <input type="radio" name="gender" value="female">Женский
+          </label>
+        </div>
+
+        <label>Любимый язык программирования:</label>
+        <select name="languages" required style="margin-bottom: 20px; height: 32px;">
+          <option value="Pascal">Pascal</option>
+          <option value="C">C</option>
+          <option value="C++">C++</option>
+          <option value="JavaScript">JavaScript</option>
+          <option value="PHP">PHP</option>
+          <option value="Python">Python</option>
+          <option value="Java">Java</option>
+          <option value="Haskel">Haskel</option>
+          <option value="Clojure">Clojure</option>
+          <option value="Prolog">Prolog</option>
+          <option value="Scala">Scala</option>
+        </select>
+
+        <textarea name="biographia" placeholder="Биография" style="margin-bottom: 20px; min-height: 200px; max-width: 681px;"></textarea>
+
+        <label>
+          <input type="checkbox" required style="margin-bottom: 20px;">Согласен на&nbsp;обработку данных
+        </label>
+
+        <button type="submit" style="max-width: 120px; height: 30px;">Сохранить</button>
+      </form>
+    </main>
+</body>
+</html>
 
