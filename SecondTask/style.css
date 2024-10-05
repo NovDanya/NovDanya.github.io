@@ -27,6 +27,7 @@ img {
 
 .container {
   margin: 0 auto;
+  padding: 0 100px;
   max-width: 960px;
 }
 
@@ -42,8 +43,12 @@ img {
   justify-content: space-between;
 }
 
+.header__logo {
+  margin-right: 20px;
+}
+
 .nav__list {
-  gap: 70px;
+  gap: 50px;
 }
 
 .nav__link {
