@@ -6,6 +6,10 @@ body{
   margin: 0;
 }
 
+.main {
+  background-color: #cecece;
+}
+
 a {
   color: rgb(71, 71, 236);
   text-decoration: none;
@@ -25,43 +29,104 @@ img {
   list-style: none;
 }
 
+.section__title {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
 .container {
   margin: 0 auto;
-  max-width: 960px;
+  padding: 0 20px;
+  max-width: 100%;
+}
+
+@media(min-width: 768px) {
+  .container {
+    padding: 0 100px;
+  }
 }
 
 /* header */
 .header {
-  padding: 29px 0;
+  padding: 20px 0;
   background-color: #2E2B44;
 }
 
 .header__container {
-  padding: 0 100px;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+}
+
+.header__logo {
+  margin-right: 40px;
+}
+
+.header__title {
+  margin-left: auto;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.header__nav {
+  margin-top: 20px;
 }
 
 .nav__list {
-  gap: 70px;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .nav__link {
-  font-size: 20px;
+  font-size: 16px;
   color: #ffffff;
+}
+
+@media(min-width: 768px) {
+  .header__container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .header__title {
+    font-size: 22px;
+  }
+
+  .header__nav {
+    margin: 0;
+  }
+
+  .nav__list {
+    padding-top: 2px;
+    flex-direction: row;
+  }
+
+  .nav__link {
+    font-size: 20px;
+  }
 }
 
 
 /* main */
-.table {
-  width: 100%;
-  border-collapse: collapse;
+.section {
+  margin: 0 auto;
+  padding-top: 20px;
+  max-width: 960px;
+  flex-direction: column;
 }
 
-th, td {
-  border: 2px solid #4d4d4d;
-  padding: 10px;
-  text-align: center;
+.section__links {
+  order: 1;
+}
+
+.section__form {
+  order: 2;
+}
+
+.table {
+  display: block;
+  margin-bottom: 20px;
+  width: 100%;
+  border-collapse: collapse;
+  overflow-x: auto;
 }
 
 #element {
@@ -74,6 +139,12 @@ tr:nth-child(even) {
 
 tr:nth-child(odd) {
   background-color: #ffffff;
+}
+
+th, td {
+  border: 2px solid #4d4d4d;
+  padding: 15px 20px;
+  text-align: center;
 }
 
 form {
@@ -98,17 +169,28 @@ form {
   height: 30px;
 }
 
+@media(min-width: 768px) {
+  .section__links {
+    order: 0;
+  }
+
+  .section__form {
+    order: 0;
+  }
+}
+
 
 /* footer */
 .footer {
+  padding: 20px 0;
   background-color: #2E2B44;
 }
 
-.linkprod {
-  padding-left: 41.6%;
+.footer__container {
+  justify-content: center;
 }
 
-.footer__list {
-  padding: 25px 0;
-  gap: 30px;
+.footer__text {
+  color: white;
+  font-size: 20px;
 }
