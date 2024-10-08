@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-grid.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Task4</title>
+</head>
+<body class="m-0">
+<header class="header py-3 px-1">
+  <div class="container header__container flex">
+    <div class="flex align-items-center">
+      <a href="https://skillbox.ru/" target="_blank" class="header__logo"><img src="img/skillbox.svg" alt="Логотип Skillbox"></a>
+      <div class="header__title">Название сайта</div>
+    </div>
+    <nav class="header__nav mt-3 m-md-0">
+      <ul class="nav__list list__reset m-0 p-0 flex">
+        <li><a href="#links" class="nav__link">Ссылки</a></li>
+        <li><a href="#table" class="nav__link">Таблица</a></li>
+        <li><a href="#form" class="nav__link">Формы</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+  <main class="main px-2">
+    <section class="section pt-3 container flex col-lg-12 col-md-10 col-sm-8 col-xs-4">
+      <div class="section__links">
+        <h2 class="section__title m-0 m-0 mb-3" id="links">Гиперссылки:</h2>
+          <ul>
+            <li>
+              <a href="http://kubsu.ru" target="_blank">абсолютная гиперссылка на&nbsp;главную страницу сайта kubsu.ru</a>
+            </li>
+            <li>
+              <a href="https://kubsu.ru" target="_blank">абсолютная на&nbsp;главную сайта kubsu.ru в&nbsp;протоколе https</a>
+            </li>
+            <li>
+              <span style="margin-right: 30px;">Ссылка-изображение</span>
+              <a href="https://avatars.mds.yandex.net/i?id=a53d230a5a59f2f535c195da6dafbd2f_l-5220548-images-thumbs&n=13" target="_blank"><img src="img/sunset.png" alt="Sunset" width="200px" height="150px"></a>
+            </li>
+            <li>
+              <a href="/internalpage" target="_blank">сокращенная ссылка на&nbsp;внутреннюю страницу</a>
+            </li>
+            <li>
+              <a href="/" target="_blank">сокращенная ссылка на&nbsp;главную страницу</a>
+            </li>
+            <li>
+              <a href="#fragmentpage">ссылка на&nbsp;фрагмент текущей страницы</a>
+            </li>
+            <li>
+              <a href="https://example.com/products?category=electronics&brand=samsung&sort=price" target="_blank">ссылка с&nbsp;тремя параметрами в&nbsp;URL</a>
+            </li>
+            <li>
+              <a href="https://example.com/product?id=12345" target="_blank">ссылка с&nbsp;параметром id&nbsp;в&nbsp;URL</a>
+            </li>
+            <li>
+              <a href="index.html">Относительная ссылка на&nbsp;страницу в&nbsp;текущем каталоге</a>
+            </li>
+            <li>
+              <a href="about/html" target="_blank">Относительная ссылка на&nbsp;страницу в&nbsp;каталоге about</a>
+            </li>
+            <li>
+              <a href="../site.html" target="_blank">Относительная ссылка на&nbsp;страницу в&nbsp;каталоге уровнем выше текущего</a>
+            </li>
+            <li>
+              <a href="../../site.html" target="_blank">Относительная ссылка на&nbsp;страницу в&nbsp;каталоге двумя уровнями выше</a>
+            </li>
+            <li>
+              <p>Контекстная <a href="https://example.com" target="_blank">ссылка</a> в&nbsp;абзаце</p>
+            </li>
+            <li>
+              <a href="https://ru.wikipedia.org/wiki/%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8#:~:text=24%20%D1%84%D0%B5%D0%B2%D1%80%D0%B0%D0%BB%D1%8F%202022%C2%A0%D0%B3%D0%BE%D0%B4%D0%B0%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F%20%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D0%B0%20%D0%BF%D0%BE%D0%BB%D0%BD%D0%BE%D0%BC%D0%B0%D1%81%D1%88%D1%82%D0%B0%D0%B1%D0%BD%D0%BE%D0%B5%20%D0%B2%D1%82%D0%BE%D1%80%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B2%20%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D1%83" target="_blank">Ссылка на&nbsp;фрагмент страницы стороннего сайта</a>
+            </li>
+            <li>
+              <map name="circle">
+                <area shape="circle" coords="50,50,50" href="https://pngimg.com/uploads/circle/circle_PNG30.png" alt="Круглая область" target="_blank"/>
+              </map>
+              <img src="img/circle.png" usemap="#circle" alt="кружок" width="100px" style="margin-right: 20px;">
+              <map name="rect">
+                <area shape="rect" coords="0,0,319,64" href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Rectangle_example.svg/2560px-Rectangle_example.svg.png" alt="Прямоугольная область" target="_blank"/>
+              </map>
+              <img src="img/Rect.png" usemap="#rect" alt="прямоугольник" width="100px">
+            </li>
+            <li>
+              <a href="">Ссылка с пустым href</a>
+            </li>
+            <li>
+              <a>Ссылка без href</a>
+            </li>
+            <li>
+              <a href="https://google.com" rel="nofollow" target="_blank">Ссылка по которой запрещен переход поисковикам</a>
+            </li>
+            <li>
+              <a href="https://google.com" rel="noindex" target="_blank">Запрещенная для индексации поисковиками</a>
+            </li>
+            <li>
+              <ol>
+                <li>
+                  <a href="https://example.com/page1" title="Описание ссылки 1" target="_blank">Первая ссылка</a>
+                </li>
+                <li>
+                  <a href="https://example.com/page2" title="Описание ссылки 2" target="_blank">Вторая ссылка</a>
+                </li>
+              </ol>
+            </li>
+            <li><a href="ftp://danil:12345@ftp.example.com/path/to/file.txt">Ссылка на файл на сервере FTP с авторизацией</a></li>
+          </ul>
+      </div>
+
+      <div class="section__table">
+        <h2 class="section__title m-0 mb-3" id="table">Таблица:</h2>
+        <table class="table mb-3">
+          <tr id="element">
+              <th class="py-2 px-3" rowspan="2">Название</th>
+              <th class="py-2 px-3" colspan="2">Детали</th>
+              <th class="py-2 px-3">Комментарии</th>
+          </tr>
+          <tr id="element">
+              <th class="py-2 px-3">Цена</th>
+              <th class="py-2 px-3">Количество</th>
+              <th class="py-2 px-3">Статус</th>
+          </tr>
+          <tr>
+              <td class="py-2 px-3">Товар A</td>
+              <td class="py-2 px-3">1000</td>
+              <td class="py-2 px-3">5</td>
+              <td class="py-2 px-3">В наличии</td>
+          </tr>
+          <tr>
+              <td class="py-2 px-3">Товар B</td>
+              <td class="py-2 px-3">2000</td>
+              <td class="py-2 px-3">2</td>
+              <td class="py-2 px-3">Нет в наличии</td>
+          </tr>
+          <tr>
+              <td class="py-2 px-3">Товар C</td>
+              <td class="py-2 px-3">1500</td>
+              <td class="py-2 px-3">3</td>
+              <td class="py-2 px-3">В наличии</td>
+          </tr>
+          <tr>
+              <td class="py-2 px-3">Товар D</td>
+              <td class="py-2 px-3">2500</td>
+              <td class="py-2 px-3">1</td>
+              <td class="py-2 px-3">В наличии</td>
+          </tr>
+          <tr>
+              <td class="py-2 px-3">Товар E</td>
+              <td class="py-2 px-3">3000</td>
+              <td class="py-2 px-3">4</td>
+              <td class="py-2 px-3">Нет в наличии</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="section__form">
+        <h2 class="section__title m-0 mb-3" id="form">Формы:</h2>
+        <form action="https://jsonplaceholder.typicode.com/posts" method="POST">
+          <input class="input mb-3" type="text" name="ФИО" placeholder="Фамилия, имя и&nbsp;отчество*" required>
+
+          <input class="input mb-3" type="tel" name="phone" placeholder="Телефон*" required>
+
+          <input class="input mb-3" type="email" name="email" placeholder="Email*" required>
+
+          <input class="input mb-3" type="date" name="birthday" placeholder="Дата рождения*" required>
+
+          <label>Ваш пол:</label>
+          <div class="mb-3">
+            <label style="display: inline-flex;">
+              <input type="radio" name="gender" value="male">Мужской
+            </label>
+            <label style="display: inline-flex;">
+              <input type="radio" name="gender" value="female">Женский
+            </label>
+          </div>
+
+          <label>Любимый язык программирования:</label>
+          <select class="mb-3" name="languages" multiple required style="height: 100px;">
+            <option value="Pascal">Pascal</option>
+            <option value="C">C</option>
+            <option value="C++">C++</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="PHP">PHP</option>
+            <option value="Python">Python</option>
+            <option value="Java">Java</option>
+            <option value="Haskel">Haskel</option>
+            <option value="Clojure">Clojure</option>
+            <option value="Prolog">Prolog</option>
+            <option value="Scala">Scala</option>
+          </select>
+
+          <textarea class="form__textarea mb-3" name="biographia" placeholder="Биография"></textarea>
+
+          <label>
+            <input class="mb-3" type="checkbox" required>Согласен на&nbsp;обработку данных
+          </label>
+
+          <button class="btn__form mb-3" type="submit">Сохранить</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="footer py-3">
+    <div class="container footer__container flex">
+      <span class="footer__text">Made by Danya</span>
+    </div>
+  </footer>
+</body>
+</html>
