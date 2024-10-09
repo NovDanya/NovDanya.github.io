@@ -146,7 +146,7 @@ form {
 }
 
 .footer__container {
-  justify-content: center;
+  justify-content: start;
 }
 
 .footer__text {
