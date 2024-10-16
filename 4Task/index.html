@@ -9,13 +9,13 @@
 </head>
 <body class="m-0">
 <header class="header py-3 px-1">
-  <div class="container header__container flex">
-    <div class="flex align-items-center">
-      <img class="header__logo pb-1" src="img/skillbox.svg" alt="Логотип Skillbox" style="margin-right: 16px;">
+  <div class="container d-flex flex-column flex-sm-row justify-content-between align-items-start">
+    <div class="d-flex align-items-center">
+      <img class="header__logo pe-4 pb-1" src="img/skillbox.svg" alt="Логотип Skillbox">
       <div class="header__title">Название сайта</div>
     </div>
-    <nav class="header__nav mt-3 m-md-0">
-      <ul class="nav__list list__reset m-0 p-0 flex">
+    <nav class="header__nav mt-3 m-sm-1">
+      <ul class="list__reset m-0 p-0 d-flex flex-column flex-sm-row" style="gap: 20px;">
         <li><a href="#links" class="nav__link">Ссылки</a></li>
         <li><a href="#table" class="nav__link">Таблица</a></li>
         <li><a href="#form" class="nav__link">Формы</a></li>
@@ -24,8 +24,54 @@
   </div>
 </header>
   <main class="main px-2">
-    <section class="section pt-3 container flex col-lg-12 col-md-10 col-sm-8 col-xs-4">
-      <div class="section__links">
+    <section class="section d-flex flex-column pt-3 container col-lg-12 col-md-10 col-sm-8 col-xs-4" style="max-width: 960px;">
+      <div class="section__table">
+        <h2 class="section__title m-0 mb-3" id="table">Таблица:</h2>
+        <table class="table case mb-3 d-block">
+          <tr id="element">
+              <th class="py-2 px-3" rowspan="2">Название</th>
+              <th class="py-2 px-3" colspan="2">Детали</th>
+              <th class="py-2 px-3">Комментарии</th>
+          </tr>
+          <tr id="element">
+              <th class="py-2 px-3">Цена</th>
+              <th class="py-2 px-3">Количество</th>
+              <th class="py-2 px-3">Статус</th>
+          </tr>
+          <tr>
+              <td class="py-2 px-3">Товар A</td>
+              <td class="py-2 px-3">1000</td>
+              <td class="py-2 px-3">5</td>
+              <td class="py-2 px-3">В наличии</td>
+          </tr>
+          <tr>
+              <td class="py-2 px-3">Товар B</td>
+              <td class="py-2 px-3">2000</td>
+              <td class="py-2 px-3">2</td>
+              <td class="py-2 px-3">Нет в наличии</td>
+          </tr>
+          <tr>
+              <td class="py-2 px-3">Товар C</td>
+              <td class="py-2 px-3">1500</td>
+              <td class="py-2 px-3">3</td>
+              <td class="py-2 px-3">В наличии</td>
+          </tr>
+          <tr>
+              <td class="py-2 px-3">Товар D</td>
+              <td class="py-2 px-3">2500</td>
+              <td class="py-2 px-3">1</td>
+              <td class="py-2 px-3">В наличии</td>
+          </tr>
+          <tr>
+              <td class="py-2 px-3">Товар E</td>
+              <td class="py-2 px-3">3000</td>
+              <td class="py-2 px-3">4</td>
+              <td class="py-2 px-3">Нет в наличии</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="order-sm-first">
         <h2 class="section__title m-0 m-0 mb-3" id="links">Гиперссылки:</h2>
           <ul>
             <li>
@@ -107,55 +153,9 @@
           </ul>
       </div>
 
-      <div class="section__table">
-        <h2 class="section__title m-0 mb-3" id="table">Таблица:</h2>
-        <table class="table mb-3">
-          <tr id="element">
-              <th class="py-2 px-3" rowspan="2">Название</th>
-              <th class="py-2 px-3" colspan="2">Детали</th>
-              <th class="py-2 px-3">Комментарии</th>
-          </tr>
-          <tr id="element">
-              <th class="py-2 px-3">Цена</th>
-              <th class="py-2 px-3">Количество</th>
-              <th class="py-2 px-3">Статус</th>
-          </tr>
-          <tr>
-              <td class="py-2 px-3">Товар A</td>
-              <td class="py-2 px-3">1000</td>
-              <td class="py-2 px-3">5</td>
-              <td class="py-2 px-3">В наличии</td>
-          </tr>
-          <tr>
-              <td class="py-2 px-3">Товар B</td>
-              <td class="py-2 px-3">2000</td>
-              <td class="py-2 px-3">2</td>
-              <td class="py-2 px-3">Нет в наличии</td>
-          </tr>
-          <tr>
-              <td class="py-2 px-3">Товар C</td>
-              <td class="py-2 px-3">1500</td>
-              <td class="py-2 px-3">3</td>
-              <td class="py-2 px-3">В наличии</td>
-          </tr>
-          <tr>
-              <td class="py-2 px-3">Товар D</td>
-              <td class="py-2 px-3">2500</td>
-              <td class="py-2 px-3">1</td>
-              <td class="py-2 px-3">В наличии</td>
-          </tr>
-          <tr>
-              <td class="py-2 px-3">Товар E</td>
-              <td class="py-2 px-3">3000</td>
-              <td class="py-2 px-3">4</td>
-              <td class="py-2 px-3">Нет в наличии</td>
-          </tr>
-        </table>
-      </div>
-
       <div class="section__form">
         <h2 class="section__title m-0 mb-3" id="form">Формы:</h2>
-        <form action="https://jsonplaceholder.typicode.com/posts" method="POST">
+        <form class="d-flex flex-column" action="https://jsonplaceholder.typicode.com/posts" method="POST">
           <input class="input mb-3" type="text" name="ФИО" placeholder="Фамилия, имя и&nbsp;отчество*" required>
 
           <input class="input mb-3" type="tel" name="phone" placeholder="Телефон*" required>
@@ -200,8 +200,8 @@
       </div>
     </section>
   </main>
-  <footer class="footer py-3">
-    <div class="container footer__container flex">
+  <footer class="footer py-3 px-1">
+    <div class="container footer__container d-flex justify-content-start">
       <span class="footer__text">Made by Danya</span>
     </div>
   </footer>
