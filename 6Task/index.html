@@ -1,1 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Калькулятор стоимости заказа</title>
+    <script defer src="index.js"></script>
+</head>
+<body>
+  <main class="main">
+    <div class="container">
+      <h1>Калькулятор стоимости заказа</h1>
+      
+      <label class="label">Выберите тип товара:</label>
+      <div>
+        <input type="radio" name="productType" value="1" id="type1" checked>
+        <label for="type1">Тип 1 (без опций и свойств)</label><br>
+        <input type="radio" name="productType" value="2" id="type2">
+        <label for="type2">Тип 2 (с опциями)</label><br>
+        <input type="radio" name="productType" value="3" id="type3">
+        <label for="type3">Тип 3 (свойства)</label>
+      </div>
 
+      <label class="label">Выберите товар:</label>
+      <select class="style" id="product">
+        <option value="1200">Шапка: 1200 руб</option>
+        <option value="7000">Куртка: 7000 руб</option>
+        <option value="1500">Футболка: 1500 руб</option>
+        <option value="2500">Шорты: 2500 руб</option>
+        <option value="3000">Штаны: 3000 руб</option>
+        <option value="4600">Кроссовки: 4600 руб</option>
+      </select>
+      
+      <label class="label">Введите количество:</label>
+      <input class="style fix" type="number" id="quantity" min="1" value="1">
+      
+      <div id="options-container" style="display: none;">
+        <label class="label">Выберите опцию товара:</label>
+        <select class="style" id="options">
+          <option value="100">Опция 1: +100 руб</option>
+          <option value="200">Опция 2: +200 руб</option>
+        </select>
+      </div>
+
+      <div id="checkbox-container" style="display: none;">
+        <label class="label"><input type="checkbox" id="property"> Свойство товара (доплата 300 руб)</label>
+      </div>
+
+      <button class="style" id="calculate">Подсчитать стоимость</button>
+
+      <h2 id="result"></h2>
+      <div id="error-message" class="error"></div>
+    </div>
+  </main>
+</body>
+</html>
