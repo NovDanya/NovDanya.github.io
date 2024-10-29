@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const errorMessage = document.getElementById('error-message');
     const resultDisplay = document.getElementById('result');
 
-    const numberRegex = /^[1-9]\d*$/;
+    const numberRegex = /^[0-9]\d*$/;
 
     // Функция для обновления видимости элементов в зависимости от типа товара
     function updateVisibility() {
