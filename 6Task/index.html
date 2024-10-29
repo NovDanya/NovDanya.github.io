@@ -38,18 +38,19 @@
       <div id="options-container" style="display: none;">
         <label class="label">Выберите опцию товара:</label>
         <select class="style" id="options">
-          <option value="100">Опция 1: +100 руб</option>
-          <option value="200">Опция 2: +200 руб</option>
+          <option value="200">С лейблами: +200 руб</option>
+          <option value="500">С логотипами: +500 руб</option>
+          <option value="700">Добавить красок: +700 руб</option>
         </select>
       </div>
 
       <div id="checkbox-container" style="display: none;">
-        <label class="label"><input type="checkbox" id="property"> Свойство товара (доплата 300 руб)</label>
+        <label class="label"><input type="checkbox" class="property-checkbox" data-price="200"> Примерка (доплата 200 руб)</label>
+        <label class="label"><input type="checkbox" class="property-checkbox" data-price="1000"> Добавить утеплителя (доплата 1000 руб)</label>
+        <label class="label"><input type="checkbox" class="property-checkbox" data-price="100"> Для детей (доплата 100 руб)</label>
       </div>
 
-      <button class="style" id="calculate">Подсчитать стоимость</button>
-
-      <h2 id="result"></h2>
+      <h2 id="result">Стоимость заказа: 0 руб.</h2>
       <div id="error-message" class="error"></div>
     </div>
   </main>
