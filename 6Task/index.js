@@ -7,8 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const errorMessage = document.getElementById('error-message');
     const resultDisplay = document.getElementById('result');
 
-    const numberRegex = /^[0-9]\d*$/;
-
     // Функция для обновления видимости элементов в зависимости от типа товара
     function updateVisibility() {
         const selectedType = document.querySelector('input[name="productType"]:checked').value;
@@ -30,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const quantity = parseInt(quantityInput.value);
 
         // Проверка корректности ввода
-        if (!numberRegex.test(quantity) || quantity < 0) {
+        if (isNaN(quantity) || quantity < 0) {
             errorMessage.innerText = 'Введите корректное количество (целое неотрицательное число).';
             resultDisplay.innerText = 'Стоимость заказа: 0 руб.';
             return;
