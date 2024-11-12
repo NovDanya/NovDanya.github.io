@@ -47,20 +47,20 @@ body {
 
 .image-slider__image img {
   width: 300px;
-  height: 350px;
+  height: 200px;
 }
 
 .image-slider .swiper-button-prev::after,
 .image-slider .swiper-button-next::after {
-  color: #000;
+  color: #fff;
   font-size: 70px;
 }
 
 .swiper-button-prev {
-  top: 277px;
+  top: 202px;
 }
 .swiper-button-next {
-  top: 277px;
+  top: 202px;
 }
 
 .image-slider .swiper-pagination {
