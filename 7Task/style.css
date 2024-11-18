@@ -16,7 +16,6 @@ body {
   font-size: 14px;
   background-color: #333;
   font-family: Arial, Helvetica, sans-serif;
-  overflow-x: hidden;
 }
 
 .wrapper {
@@ -39,6 +38,7 @@ body {
 
 .image-slider {
   text-align: center;
+  overflow: hidden;
 }
 
 .image-slider__image {
@@ -57,15 +57,16 @@ body {
 }
 
 .swiper-button-prev {
+  position: absolute;
   top: 202px;
 }
 .swiper-button-next {
+  position: absolute;
   top: 202px;
 }
 
 .image-slider .swiper-pagination {
-  position: relative;
-  top: 10px;
+  top: 313px;
 }
 
 .image-slider .swiper-pagination-bullet {
